@@ -19,10 +19,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("view did appear")
-        let defaults = UserDefaults.standard
-        let defaultSetTip = defaults.integer(forKey: "defaultTipKey")
-        print(defaultSetTip)
-        tipControl.selectedSegmentIndex =  defaultSetTip
         
     }
 
@@ -37,7 +33,7 @@ class ViewController: UIViewController {
     }
     @IBAction func calculateTip(_ sender: AnyObject) {
         let tipPercentages = [0.18, 0.20, 0.25]
-        
+        print("calculate bill")
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
@@ -52,6 +48,7 @@ class ViewController: UIViewController {
         let defaultSetTip = defaults.integer(forKey: "defaultTipKey")
         print(defaultSetTip)
         tipControl.selectedSegmentIndex = defaultSetTip
+        self.calculateTip(tipControl)
     }
 
 }
