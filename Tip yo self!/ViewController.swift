@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("view did appear")
+        let defaults = UserDefaults.standard
+        let defaultSetTip = defaults.integer(forKey: "defaultTipKey")
+        print(defaultSetTip)
+        tipControl.selectedSegmentIndex =  defaultSetTip
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,21 +48,11 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("view will appear")
+        let defaults = UserDefaults.standard
+        let defaultSetTip = defaults.integer(forKey: "defaultTipKey")
+        print(defaultSetTip)
+        tipControl.selectedSegmentIndex = defaultSetTip
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("view did appear")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("view will disappear")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("view did disappear")
-    }
+
 }
 

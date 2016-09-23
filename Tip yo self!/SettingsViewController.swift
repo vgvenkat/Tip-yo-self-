@@ -10,17 +10,23 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var defaultTipSegment: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let defaults = UserDefaults.standard
+        let defaultSetTip = defaults.integer(forKey: "defaultTipKey")
+        print("Default view did tip", defaultSetTip)
+
+        defaultTipSegment.selectedSegmentIndex =  defaultSetTip
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -32,4 +38,16 @@ class SettingsViewController: UIViewController {
     }
     */
 
+    @IBAction func setDefaultTip(_ sender: AnyObject) {
+        
+        
+        let currentTipSelection = defaultTipSegment.selectedSegmentIndex
+        print("Current selection in settings", currentTipSelection)
+        
+        let defaults = UserDefaults.standard
+        defaults.set(currentTipSelection, forKey: "defaultTipKey")
+        
+        defaults.synchronize()
+        
+    }
 }
