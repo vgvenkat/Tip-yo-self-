@@ -1,4 +1,4 @@
-# Tip-yo-self-
+# Tip-yo-self
 A simple tip calculator in swift
 
 # Pre-work - *Tip-yo-self!*
@@ -7,7 +7,7 @@ A simple tip calculator in swift
 
 Submitted by: **Venkat Ganesan**
 
-Time spent: **2.5** hours spent in total
+Time spent: **5.5** hours spent in total
 
 ## User Stories
 
@@ -18,18 +18,24 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [X] Remembering the bill amount across app restarts (if <10mins)
+* [X] Using locale-specific currency and currency thousands separators.
+* [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] The app has a feature to split the bill for upto 5 people which can be controlled with a UIStepper control
+- [X] Progress bar to display how many steps available to max on tip %
+- [X] Progress bar to display how many steps available to max on number of people bill splits
+-[X] Updated UI a bit, changed colors, fonts
+-[X] Universal currency indicator at the top that changes based on location
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
-
+Version 2:
+<img src='http://i.imgur.com/okftrMS.gif' title='Video Walkthrough 2'width='' alt='Video Walkthrough' />
+Version 1:
 <img src='http://i.imgur.com/CvehooU.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
