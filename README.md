@@ -25,6 +25,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [X] The app has a feature to split the bill for upto 5 people which can be controlled with a UIStepper control
+- [X] Faded tip amount shown below stepper control for actual tip amount
 - [X] Progress bar to display how many steps available to max on tip %
 - [X] Progress bar to display how many steps available to max on number of people bill splits
 -[X] Updated UI a bit, changed colors, fonts
