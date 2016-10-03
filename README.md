@@ -28,8 +28,8 @@ The following **additional** features are implemented:
 - [X] Faded tip amount shown below stepper control for actual tip amount
 - [X] Progress bar to display how many steps available to max on tip %
 - [X] Progress bar to display how many steps available to max on number of people bill splits
--[X] Updated UI a bit, changed colors, fonts
--[X] Universal currency indicator at the top that changes based on location
+- [X] Updated UI a bit, changed colors, fonts
+- [X] Universal currency indicator at the top that changes based on location
 
 ## Video Walkthrough 
 
